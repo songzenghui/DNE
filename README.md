@@ -1,8 +1,8 @@
-## DNE
+# DNE
 
 + The implementation of DNE
 
-####Requirements
+###Requirements
 
 + Python 3.5.2
 + Tensorflow-gpu == 1.10.0
@@ -11,7 +11,7 @@
 + matplotlib
 + networkx
 
-#### Basic usage
+### Basic usage
 
 + Produce representation
 
