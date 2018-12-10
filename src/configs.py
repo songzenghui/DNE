@@ -1,0 +1,22 @@
+import tensorflow as tf 
+
+tf.app.flags.DEFINE_string('format','mat','the file format')
+tf.app.flags.DEFINE_string('input','data/3-NG.mat','the file name')
+tf.app.flags.DEFINE_string('output','emb/3ng.npy','saved as npy')
+tf.app.flags.DEFINE_integer('node_num',100,'nums of per node')
+tf.app.flags.DEFINE_integer('path_length',100,'length of path')
+tf.app.flags.DEFINE_integer('timesteps',100,'length of one sequence')
+tf.app.flags.DEFINE_integer('sequences',100,'how many sequences in one batch')
+tf.app.flags.DEFINE_integer('hidden_size',512,'hidden size')
+tf.app.flags.DEFINE_integer('batches',128,'batches size')
+tf.app.flags.DEFINE_integer('layer',1,'how many layers')
+tf.app.flags.DEFINE_integer('representation_size',128,'representation size')
+tf.app.flags.DEFINE_float('lr',0.001,'learning rate')
+tf.app.flags.DEFINE_float('lap_lr',0.001,'learning rate')
+tf.app.flags.DEFINE_float('keep_prob',0.5,'keep prob')
+tf.app.flags.DEFINE_integer('grad_clip',5,'gradient clipping')
+tf.app.flags.DEFINE_integer('lstm_epoches',5,'iter nums')
+tf.app.flags.DEFINE_integer('lap_epoches',5,'iter nums')
+tf.app.flags.DEFINE_integer('epoches',5,'iter nums')
+tf.app.flags.DEFINE_float('sb',0.1,'smooth bias')
+FLAGS = tf.app.flags.FLAGS
